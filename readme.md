@@ -1,5 +1,5 @@
 # LangGraph4j Based Topic Researcher
-A topic research agent built with Spring AI, LangGraph4j, and Qwen3:1.5b LLM hosted locally on Ollama.
+A topic research agent built with Spring AI, LangGraph4j, and Qwen3:1.7b LLM hosted locally on Ollama.
 ## Overview
 This project implements an autonomous research assistant that can explore topics thoroughly and provide comprehensive summaries. The agent is designed to iteratively improve its research by identifying and filling knowledge gaps until it has gathered sufficient information to address the user's query comprehensively.
 
@@ -10,13 +10,13 @@ This is project is based on another python project https://github.com/google-gem
 - **Intelligent Query Generation**: Creates targeted research queries based on the initial topic
 - **Iterative Improvement**: Evaluates research quality and identifies knowledge gaps
 - **Comprehensive Summarization**: Synthesizes multiple research findings into coherent summaries
-- **Locally Hosted LLM**: Uses Qwen3:1.5b running on Ollama for privacy and control
+- **Locally Hosted LLM**: Uses Qwen3:1.7b running on Ollama for privacy and control
 
 ## Technology Stack
 - **Spring Boot** (v3.5.0): Provides the application framework
 - **Spring AI** (v1.0.0): Facilitates AI model integration and prompt engineering
 - **LangGraph4j** (v1.5.14): Enables the creation of complex agent workflows with state management
-- **Qwen3:1.5b**: Lightweight but capable Large Language Model
+- **Qwen3:1.7b**: Lightweight but capable Large Language Model
 - **Ollama**: Local LLM hosting platform
 - **Java 21**: Latest language features for efficient development
 
@@ -34,7 +34,7 @@ This is project is based on another python project https://github.com/google-gem
 ### Prerequisites
 - Java 21 or higher
 - Maven
-- Ollama with Qwen3:1.5b model installed
+- Ollama with Qwen3:1.7b model installed
 
 ### Installation
 1. Clone the repository:
@@ -42,13 +42,13 @@ This is project is based on another python project https://github.com/google-gem
    git clone https://github.com/yourusername/langgraph4j-researcher.git
    cd langgraph4j-researcher
 ```
-1. Install dependencies:
+2Install dependencies:
 ``` bash
    mvn install
 ```
-1. Ensure Ollama is running with the required model:
+3Ensure Ollama is running with the required model:
 ``` bash
-   ollama pull qwen3:1.5b
+   ollama pull qwen3:1.7b
    ollama serve
 ```
 ### Running the Application
