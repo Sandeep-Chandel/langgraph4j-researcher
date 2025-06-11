@@ -3,7 +3,8 @@ A topic research agent built with Spring AI, LangGraph4j, and Qwen3:1.7b LLM hos
 ## Overview
 This project implements an autonomous research assistant that can explore topics thoroughly and provide comprehensive summaries. The agent is designed to iteratively improve its research by identifying and filling knowledge gaps until it has gathered sufficient information to address the user's query comprehensively.
 
-This is project is based on another python project https://github.com/google-gemini/gemini-fullstack-langgraph-quickstart
+## Attribution
+This project was inspired by [google-gemini/gemini-fullstack-langgraph-quickstart](https://github.com/google-gemini/gemini-fullstack-langgraph-quickstart), which provided the initial approach for implementing LangGraph-based agents.
 
 ## Key Features
 - **Automated Research Process**: Takes a user query and autonomously conducts in-depth research
